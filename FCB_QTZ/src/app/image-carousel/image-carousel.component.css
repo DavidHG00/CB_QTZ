@@ -6,3 +6,6 @@
 .mat-mdc-tab-body-content.ng-tns-c737557735-1.ng-trigger.ng-trigger-translateTab::-webkit-scrollbar {
     width: 0 !important; /* para navegadores basados en WebKit (Chrome, Safari) */
 }
+body{
+    background-color: white
+   }

@@ -5,6 +5,8 @@ import { DebugElement } from '@angular/core';
 
 import { EquiposComponentComponent } from './EquiposComponent.component';
 
+
+
 describe('EquiposComponentComponent', () => {
   let component: EquiposComponentComponent;
   let fixture: ComponentFixture<EquiposComponentComponent>;

@@ -17,10 +17,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
-
-
-
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -41,9 +38,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     FormsModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatTabsModule
- 
-    
+    MatTabsModule,
+    MatPaginatorModule,
   ],
   exports: [MatSliderModule,
     MatToolbarModule,
@@ -58,7 +54,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     FormsModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatTabsModule
+    MatTabsModule,
+    MatPaginatorModule
  
   ]
 

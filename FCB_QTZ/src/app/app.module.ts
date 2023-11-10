@@ -10,13 +10,15 @@ import { SharedModule } from './shared/shared.module';
 import { ServiciosComponentComponent } from './ServiciosComponent/ServiciosComponent.component';
 import { EquiposComponentComponent } from './EquiposComponent/EquiposComponent.component';
 import { SoftwareComponentComponent } from './SoftwareComponent/SoftwareComponent.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
       ServiciosComponentComponent,
       EquiposComponentComponent,
-      SoftwareComponentComponent
+      SoftwareComponentComponent,
+      ImageCarouselComponent
    ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <title>CG_QTZ</title>
@@ -8,30 +9,31 @@
 
 
 <body>
-  
-    <div>
-      <mat-toolbar class="body-Head">
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-          <img src="assets/QTZ.jpg" alt="QTZ Image" class="img-qtz">
-          <span class="button-text">CG_QTZ</span>
-        </button>
-        <span class="flex-spacer"></span>
-        <button mat-icon-button class="carrito-icon" aria-label="Carrito de compras">
-      <mat-icon>add_shopping_cart</mat-icon>
-        </button>
-      </mat-toolbar>
 
-      <mat-tab-group>
-        <mat-tab label="Servicios">
-          <app-ServiciosComponent></app-ServiciosComponent>
-        </mat-tab>
-        <mat-tab label="Equipos y accesorios">
-          <app-EquiposComponent></app-EquiposComponent>
-        </mat-tab>
-        <mat-tab label="Software">
-          <app-SoftwareComponent></app-SoftwareComponent>
-        </mat-tab>
-      </mat-tab-group>
-    </div>
+  <div>
+    <mat-toolbar class="body-Head">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <img src="assets/Logo.jpeg" alt="QTZ Image" class="img-qtz">
+        <span class="button-text">CG_QTZ</span>
+      </button>
+      <span class="flex-spacer"></span>
+      <button mat-icon-button class="carrito-icon" aria-label="Carrito de compras">
+        <mat-icon>add_shopping_cart</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <mat-tab-group [selectedIndex]="1">
+      <mat-tab label="Servicios">
+        <app-ServiciosComponent></app-ServiciosComponent>
+      </mat-tab>
+      <mat-tab label="Equipos y accesorios">
+        <app-EquiposComponent></app-EquiposComponent>
+      </mat-tab>
+      <mat-tab label="Software">
+        <app-SoftwareComponent></app-SoftwareComponent>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
 </body>
+
 </html>

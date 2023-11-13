@@ -7,5 +7,19 @@
     width: 0 !important; /* para navegadores basados en WebKit (Chrome, Safari) */
 }
 body{
-    background-color: white
-   }
+    background-color:  white;
+}
+.carousel-inner {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%; /* Establece el tamaño máximo de la imagen como el 100% del contenedor */
+  height: auto; /* Hace que la altura se ajuste automáticamente al ancho para mantener la proporción original */
+}

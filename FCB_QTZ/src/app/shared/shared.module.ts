@@ -18,6 +18,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 
@@ -40,6 +41,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatCheckboxModule,
     MatTabsModule,
     MatPaginatorModule,
+    MatMenuModule
   ],
   exports: [MatSliderModule,
     MatToolbarModule,
@@ -55,7 +57,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatSelectModule,
     MatCheckboxModule,
     MatTabsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatMenuModule
  
   ]
 

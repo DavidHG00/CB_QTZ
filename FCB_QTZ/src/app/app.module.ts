@@ -7,10 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //Componentes
 import { SharedModule } from './shared/shared.module';
-import { ServiciosComponentComponent } from './ServiciosComponent/ServiciosComponent.component';
-import { EquiposComponentComponent } from './EquiposComponent/EquiposComponent.component';
-import { SoftwareComponentComponent } from './SoftwareComponent/SoftwareComponent.component';
-import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { ServiciosComponentComponent } from './Components/ServiciosComponent/ServiciosComponent.component';
+import { EquiposComponentComponent } from './Components/EquiposComponent/EquiposComponent.component';
+import { SoftwareComponentComponent } from './Components/SoftwareComponent/SoftwareComponent.component';
+import { ImageCarouselComponent } from './Components/image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [					

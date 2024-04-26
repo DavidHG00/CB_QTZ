@@ -1,3 +1,66 @@
-body{
+body {
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+    padding: 1em;
+    margin-left: 80px;
+    margin-right: 80px;
     background-color: white;
-   }
+    text-align: center;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background-color: rgba(55, 93, 115, 255);
+    padding: 1em;
+    color: white;
+  }
+  
+  .buttonequipo justify-content-center{
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaciado entre los elementos */
+    overflow-x: hidden; /* Quitar la barra de desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Hace que los elementos se "adheran" al hacer scroll */
+    -webkit-overflow-scrolling: touch; /* Habilita el desplazamiento suave en iOS */
+    max-width: 600px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+  }
+  
+  .btn-group {
+    flex: 0 0 auto;
+    margin-right: 10px; /* Espaciado entre los grupos de botones */
+  }
+  
+  .btn {
+    flex: 1 0 auto; /* Evita que los botones se estiren */
+  }
+  
+  /* Opcional: Estilo para resaltar el botón activo */
+  .btn.active,
+  .btn-group > .btn.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  main {
+    padding: 2em;
+  }
+  
+  .card {
+    width: 25rem;
+    margin: 25px;
+    /* Ajusta el margen entre las tarjetas según tus preferencias */
+  }
+  
+  .EquipoComponentmain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  footer {
+    background-color: rgba(55, 93, 115, 255);
+    padding: 1em;
+    color: white;
+  }

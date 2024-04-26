@@ -1,24 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 10px;
-    padding: 20px;
+    margin: 0; /* Modificado para eliminar el margen */
+    padding: 0; /* Modificado para eliminar el relleno */
     background-color: white;
-    text-align: center;
     color: #333;
 }
 
 header {
-    background-color: rgba(55,93,115,255);
+    background-color: rgba(55, 93, 115, 255);
     padding: 1em;
     color: white;
+    text-align: center;
 }
 
 main {
     padding: 2em;
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    max-width: 800px; /* Limita el ancho máximo del contenido */
 }
 
 footer {
-    background-color: rgba(55,93,115,255);
+    background-color: rgba(55, 93, 115, 255);
     padding: 1em;
     color: white;
 }

@@ -11,6 +11,9 @@ import { ServiciosComponentComponent } from './Components/ServiciosComponent/Ser
 import { EquiposComponentComponent } from './Components/EquiposComponent/EquiposComponent.component';
 import { SoftwareComponentComponent } from './Components/SoftwareComponent/SoftwareComponent.component';
 import { ImageCarouselComponent } from './Components/image-carousel/image-carousel.component';
+import { PersonalizacioncomponentComponent } from './Components/personalizacioncomponent/personalizacioncomponent.component';
+import { LoginComponent } from './Components/Login/Login.component';
+
 
 @NgModule({
   declarations: [					
@@ -18,7 +21,10 @@ import { ImageCarouselComponent } from './Components/image-carousel/image-carous
       ServiciosComponentComponent,
       EquiposComponentComponent,
       SoftwareComponentComponent,
-      ImageCarouselComponent
+      ImageCarouselComponent,
+      PersonalizacioncomponentComponent,
+      LoginComponent,
+      
    ],
   imports: [
     BrowserModule,

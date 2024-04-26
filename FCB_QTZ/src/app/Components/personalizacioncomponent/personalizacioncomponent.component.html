@@ -8,8 +8,12 @@
 </head>
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
   <div class="buttonequipo justify-content-center">
-  <button type="button" class="btn"  (click)="mostrarweb()" >Software web</button>
-  <button type="button" class="btn"  (click)="mostrarlocal()" >Software local</button>
+    <button type="button" class="btn"(click)="mostrarPlayeras()">Playeras</button>
+    <button type="button" class="btn"(click)="mostrarTazas()">Tazas</button>
+    <button type="button" class="btn"(click)="mostrarGorras()">Gorras</button>
+    <button type="button" class="btn"(click)="mostrarTermos()">Termos</button>
+    <button type="button" class="btn"(click)="mostrarCalzado()">Calzado</button>
+    <button type="button" class="btn"(click)="mostrarMausepad()">Mausepad</button>
   </div>
   <div>
     <app-image-carousel></app-image-carousel>
@@ -17,7 +21,6 @@
   <header>
     Envíos a todo México Compra 100% segura Garantía de componentes
   </header>
-  
   <main>
     <div class="row">
       <div *ngFor="let producto of productos" class="col-lg-3 col-md-4 col-sm-6 col-xs-12" [style.display]="producto.visible ? 'block' : 'none'">

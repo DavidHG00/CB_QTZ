@@ -49,9 +49,9 @@ main {
 }
 
 .card {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  width: 25rem;
+  margin: 25px;
+  /* Ajusta el margen entre las tarjetas según tus preferencias */
 }
 
 .EquipoComponentmain {

@@ -8,29 +8,28 @@
 </head>
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
   <div class="buttonequipo justify-content-center">
-    <button type="button" class="btn">Pc Armadas</button>
-    <button mat-button [matMenuTriggerFor]="menu">Accesorios</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="accion1()">Microfonos</button>
-      <button mat-menu-item (click)="accion2()">Mouse</button>
-      <button mat-menu-item (click)="accion2()">Camaras</button>
-      <button mat-menu-item (click)="accion2()">Pantallas</button>
-      <button mat-menu-item (click)="accion2()">Cables</button>
+    <button mat-button [matMenuTriggerFor]="menuAccesorios">Accesorios</button>
+    <mat-menu #menuAccesorios="matMenu">
+      <button mat-menu-item (click)="mostrarMicrofonos()" >Mostrar Micrófonos</button>
+      <button mat-menu-item (click)="mostrarComputadoras()" >Mostrar Computadoras</button>
+      <button mat-menu-item (click)="mostrarMause()" >Mostrar Mause</button>
+      <button mat-menu-item (click)="mostrarAudifonos()" >Mostrar Audifonos</button>
       <!-- Puedes agregar más opciones según sea necesario -->
     </mat-menu>
-    <button mat-button [matMenuTriggerFor]="menu">Componentes</button>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item (click)="accion1()">Procesador</button>
-      <button mat-menu-item (click)="accion2()">Motherboard</button>
-      <button mat-menu-item (click)="accion2()">Memorias Ram</button>
-      <button mat-menu-item (click)="accion2()">Almacenamiento</button>
-      <button mat-menu-item (click)="accion2()">Fuentes de poder</button>
-      <button mat-menu-item (click)="accion2()">Gabinetes</button>
-      <button mat-menu-item (click)="accion2()">Tarjetas Graficas</button>
-      <button mat-menu-item (click)="accion2()">Enfriamiento</button>
+    <button mat-button [matMenuTriggerFor]="menuComponentes">Componentes</button>
+    <mat-menu #menuComponentes="matMenu">
+      <button mat-menu-item (click)="mostrarProcesador()">Procesador</button>
+      <button mat-menu-item (click)="mostrarMotherboard()">Motherboard</button>
+      <button mat-menu-item (click)="mostrarMemoriasRam()">Memorias Ram</button>
+      <button mat-menu-item (click)="mostrarAlmacenamiento()">Almacenamiento</button>
+      <button mat-menu-item (click)="mostrarFuentesdepoder()">Fuentes de poder</button>
+      <button mat-menu-item (click)="mostrarGabinetes()">Gabinetes</button>
+      <button mat-menu-item (click)="mostrarTarjetasGraficas()">Tarjetas Graficas</button>
+      <button mat-menu-item (click)="mostrarEnfriamiento()">Enfriamiento</button>
       <!-- Puedes agregar más opciones según sea necesario -->
     </mat-menu>
-    <button mat-raised-button0 color="primary">Personaliza tu Pc</button>
+    <button type="button" class="btn" (click)="Pcarmadas()">Pc Armadas</button>
+    <button type="button" class="btn" (click)="Personalizarpc()">Personaliza tu PC</button>
   </div>
   <div>
     <app-image-carousel></app-image-carousel>
@@ -39,77 +38,19 @@
     Envíos a todo México Compra 100% segura Garantía de componentes
   </header>
   <main>
-    <div class="EquipoComponentmain">
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="row">
+      <div *ngFor="let producto of productos" class="col-lg-3 col-md-4 col-sm-6 col-xs-12" [style.display]="producto.visible ? 'block' : 'none'">
+        <div class="card" style="width: 100%;">
+          <img [src]="producto.imagen" class="card-img-top" [alt]="producto.nombre">
+          <div class="card-body">
+            <h5 class="card-title">{{ producto.nombre }}</h5>
+            <p class="card-text">{{ producto.descripcion }}</p>
+            <p>{{ producto.precio }}</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+            <br>
+            <br>
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+          </div>
         </div>
       </div>
     </div>

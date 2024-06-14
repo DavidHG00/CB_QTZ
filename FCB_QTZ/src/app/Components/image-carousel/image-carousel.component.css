@@ -1,0 +1,25 @@
+.mat-mdc-tab-body-content.ng-tns-c737557735-1.ng-trigger.ng-trigger-translateTab {
+    scrollbar-width: thin; /* para Firefox */
+    scrollbar-color: transparent transparent; /* para Firefox */
+}
+
+.mat-mdc-tab-body-content.ng-tns-c737557735-1.ng-trigger.ng-trigger-translateTab::-webkit-scrollbar {
+    width: 0 !important; /* para navegadores basados en WebKit (Chrome, Safari) */
+}
+body{
+    background-color:  white;
+}
+.carousel-inner {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%; /* Establece el tamaño máximo de la imagen como el 100% del contenedor */
+  height: auto; /* Hace que la altura se ajuste automáticamente al ancho para mantener la proporción original */
+}

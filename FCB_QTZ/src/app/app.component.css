@@ -1,0 +1,46 @@
+.body-Head {
+  background-color: rgb(19, 17, 20, 255);
+  color: rgb(255, 255, 255);
+  padding: 70px;
+
+}
+
+.Head-Bottons {
+  flex: 1 1 auto;
+}
+
+.mat-tab-group {
+  margin-bottom: 1000px;
+}
+
+.img-qtz {
+  width: 100px;
+  height: 100px;
+}
+
+.example-icon {
+  display: flex;
+  align-items: center;
+}
+
+.button-text {
+  margin-left: 5px;
+  /* Ajusta el margen según sea necesario */
+}
+
+.Contents {
+  flex: 1 1 auto;
+}
+
+/* flex spacer takes available space */
+.flex-spacer {
+  flex: 1 1 auto; /* 1 = grow, 1 = shrink, auto = basis */
+ }
+ 
+.mat-toolbar.component-toolbar {
+  margin-top: 20px;
+  /* Ajusta la separación superior según sea necesario */
+}
+body{
+ background-color: white;
+}
